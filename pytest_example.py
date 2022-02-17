@@ -25,7 +25,7 @@ def count_word_occurrence_in_file(file_name, word):
     with open(file_name, 'r') as f:
         for line in f:
             words = line.split()
-            count += words.count(word)
+            count += words.count(str(word))
     return count
 
 def count_word_occurrence_in_string(text, word):
